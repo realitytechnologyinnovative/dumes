@@ -1,0 +1,21 @@
+<head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="icon" href="{{ 'images/icon.webp' | relative_url }}" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" name="description">
+    <meta content="{% if page.keywords %}{{ page.keywords }}{% else %}affordable housing, Nigeria, Abuja, housing development, D-DUMES{% endif %}" name="keywords">
+    <meta content="{{ site.data.company.name }}" name="author">
+    <!-- CSS Files -->
+    <link href="{{ 'css/bootstrap.min.css' | relative_url }}" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="{{ 'css/plugins.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <link href="{{ 'css/swiper.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <link href="{{ 'css/style.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <link href="{{ 'css/coloring.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <!-- custom-css -->
+    <link href="{{ 'css/swiper-custom-1.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <link href="{{ 'css/datepicker.css' | relative_url }}" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="{{ 'css/colors/scheme-01.css' | relative_url }}" rel="stylesheet" type="text/css">
+</head>
+

@@ -1,0 +1,38 @@
+# Jekyll Configuration for D-DUMES SHELTER LIMITED
+title: D-DUMES SHELTER LIMITED
+tagline: "TRANSFORMING DREAMS INTO REALITY"
+description: "Leading Nigerian affordable housing development company. RC: 943183"
+url: "" # Leave empty for GitHub Pages
+baseurl: "" # Leave empty for root repository, or use "/repository-name" for project pages
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+
+# Site settings
+company:
+  name: "D-DUMES SHELTER LIMITED"
+  registration: "RC: 943183"
+  established: 2011
+  tagline: "TRANSFORMING DREAMS INTO REALITY"
+
+# Nigeria-specific settings
+location:
+  country: "Nigeria"
+  city: "Abuja"
+  address: "Suite B11, Dansariri Plaza, Zone 4"
+  region: "Federal Capital Territory"
+

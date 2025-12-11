@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+        
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+        
+        {% include header.html %}
+
+        {{ content }}
+
+    </div>
+
+    {% include footer.html %}
+    
+    {% include scripts.html %}
+
+</body>
+</html>
+

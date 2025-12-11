@@ -1,0 +1,22 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about.html"
+  - title: "Services"
+    url: "/services.html"
+  - title: "Projects"
+    url: "/projects.html"
+  - title: "Contact"
+    url: "/contact.html"
+
+footer:
+  - title: "About Us"
+    url: "/about.html"
+  - title: "Our Services"
+    url: "/services.html"
+  - title: "Projects"
+    url: "/projects.html"
+  - title: "Contact"
+    url: "/contact.html"
+

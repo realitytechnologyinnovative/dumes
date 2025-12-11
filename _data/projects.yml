@@ -1,0 +1,55 @@
+featured:
+  - title: "Abuja Affordable Housing Estate - Phase 1"
+    location: "Abuja, FCT"
+    type: "Urban Development"
+    status: "Completed"
+    units: 120
+    description: "A landmark affordable housing project in Nigeria's capital, providing quality homes for middle-income families."
+    image: "images/news/s1.webp"
+    date: "2024-04-28"
+
+  - title: "Lagos Urban Housing Complex"
+    location: "Lagos State"
+    type: "Urban Development"
+    status: "In Progress"
+    units: 200
+    description: "Sustainable design housing complex in Lagos, Nigeria's commercial capital, featuring modern amenities and eco-friendly construction."
+    image: "images/news/s2.webp"
+    date: "2024-04-26"
+
+  - title: "Rural Housing Development Program"
+    location: "Multiple States"
+    type: "Rural Initiative"
+    status: "Ongoing"
+    units: 150
+    description: "Community-focused rural housing development bringing quality, affordable homes to underserved communities across Nigeria."
+    image: "images/news/s3.webp"
+    date: "2024-04-24"
+
+  - title: "Port Harcourt Residential Estate"
+    location: "Rivers State"
+    type: "Urban Development"
+    status: "Completed"
+    units: 80
+    description: "Modern residential estate in Port Harcourt, featuring sustainable building practices and community facilities."
+    image: "images/news/s4.webp"
+    date: "2024-04-22"
+
+  - title: "Kano Affordable Housing Scheme"
+    location: "Kano State"
+    type: "Urban Development"
+    status: "Planning"
+    units: 100
+    description: "Upcoming affordable housing scheme in Kano, designed to meet the housing needs of low and middle-income families in Northern Nigeria."
+    image: "images/news/s5.webp"
+    date: "2024-04-20"
+
+  - title: "Ibadan Community Housing Project"
+    location: "Oyo State"
+    type: "Community Development"
+    status: "In Progress"
+    units: 90
+    description: "Community-centered housing project in Ibadan, fostering social development and economic growth in South-Western Nigeria."
+    image: "images/news/s6.webp"
+    date: "2024-04-18"
+
