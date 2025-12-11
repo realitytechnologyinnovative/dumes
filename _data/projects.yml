@@ -1,55 +1,61 @@
 featured:
-  - title: "Abuja Affordable Housing Estate - Phase 1"
-    location: "Abuja, FCT"
-    type: "Urban Development"
+  - title: "Kado Project - Affordable Housing Estate"
+    location: "Kado District, Abuja, FCT"
+    type: "Affordable Housing"
     status: "Completed"
     units: 120
-    description: "A landmark affordable housing project in Nigeria's capital, providing quality homes for middle-income families."
+    description: "A landmark affordable housing project in Kado District, Abuja, providing quality 2-4 bedroom homes for middle-income families. Features modern amenities, 24/7 security, and proximity to schools and markets."
     image: "images/news/s1.webp"
     date: "2024-04-28"
+    price_range: "₦8M - ₦15M"
 
-  - title: "Lagos Urban Housing Complex"
-    location: "Lagos State"
-    type: "Urban Development"
-    status: "In Progress"
-    units: 200
-    description: "Sustainable design housing complex in Lagos, Nigeria's commercial capital, featuring modern amenities and eco-friendly construction."
+  - title: "Asokoro Estate - Luxury Residential Complex"
+    location: "Asokoro District, Abuja, FCT"
+    type: "Luxury Development"
+    status: "Completed"
+    units: 85
+    description: "Premium luxury residential complex in the prestigious Asokoro District. Features 4-5 bedroom duplexes, world-class amenities, and exclusive gated community living."
     image: "images/news/s2.webp"
     date: "2024-04-26"
+    price_range: "₦45M - ₦85M"
 
-  - title: "Rural Housing Development Program"
-    location: "Multiple States"
-    type: "Rural Initiative"
-    status: "Ongoing"
-    units: 150
-    description: "Community-focused rural housing development bringing quality, affordable homes to underserved communities across Nigeria."
+  - title: "Luxury Service Apartment - Garki"
+    location: "Garki District, Abuja, FCT"
+    type: "Service Apartment"
+    status: "Completed"
+    units: 60
+    description: "Fully serviced luxury apartments in Garki District, ideal for professionals and expatriates. Features include housekeeping, concierge services, and premium facilities."
     image: "images/news/s3.webp"
     date: "2024-04-24"
+    price_range: "₦2.5M - ₦4.5M per year"
 
-  - title: "Port Harcourt Residential Estate"
-    location: "Rivers State"
-    type: "Urban Development"
-    status: "Completed"
-    units: 80
-    description: "Modern residential estate in Port Harcourt, featuring sustainable building practices and community facilities."
+  - title: "Garki Residential Complex - Phase 2"
+    location: "Garki District, Abuja, FCT"
+    type: "Residential Development"
+    status: "In Progress"
+    units: 200
+    description: "Modern residential complex in Garki District featuring 3-4 bedroom terraces and semi-detached homes. Phase 2 expansion with enhanced community facilities."
     image: "images/news/s4.webp"
     date: "2024-04-22"
+    price_range: "₦12M - ₦25M"
 
-  - title: "Kano Affordable Housing Scheme"
-    location: "Kano State"
-    type: "Urban Development"
-    status: "Planning"
-    units: 100
-    description: "Upcoming affordable housing scheme in Kano, designed to meet the housing needs of low and middle-income families in Northern Nigeria."
+  - title: "Wuse Housing Scheme - Affordable Units"
+    location: "Wuse Zone 4, Abuja, FCT"
+    type: "Affordable Housing"
+    status: "Completed"
+    units: 150
+    description: "Affordable housing scheme in Wuse Zone 4, providing quality 2-3 bedroom homes for low and middle-income families. Strategic location with easy access to city center."
     image: "images/news/s5.webp"
     date: "2024-04-20"
+    price_range: "₦6M - ₦12M"
 
-  - title: "Ibadan Community Housing Project"
-    location: "Oyo State"
-    type: "Community Development"
-    status: "In Progress"
-    units: 90
-    description: "Community-centered housing project in Ibadan, fostering social development and economic growth in South-Western Nigeria."
+  - title: "Maitama Luxury Estate - Premium Living"
+    location: "Maitama District, Abuja, FCT"
+    type: "Luxury Estate"
+    status: "Completed"
+    units: 45
+    description: "Exclusive luxury estate in Maitama, Abuja's most prestigious district. Features 5-6 bedroom mansions, Olympic-sized pool, tennis courts, and 24/7 security."
     image: "images/news/s6.webp"
     date: "2024-04-18"
+    price_range: "₦120M - ₦250M"
 

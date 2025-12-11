@@ -2,8 +2,8 @@
 title: D-DUMES SHELTER LIMITED
 tagline: "TRANSFORMING DREAMS INTO REALITY"
 description: "Leading Nigerian affordable housing development company. RC: 943183"
-url: "" # Leave empty for GitHub Pages
-baseurl: "" # Leave empty for root repository, or use "/repository-name" for project pages
+url: "https://dume.emts.ng" # Your domain URL
+baseurl: "" # Leave empty for root domain
 
 # Build settings
 markdown: kramdown
