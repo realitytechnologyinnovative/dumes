@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <section id="section-hero" class="section-dark text-light no-top no-bottom relative overflow-hidden mh-600 jarallax">
+            <img src="{% static 'images/background/6.webp' %}" class="jarallax-img" alt="">
+            <div class="gradient-edge-top op-6"></div>
+            <div class="abs w-80 bottom-10 z-2 w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="relative overflow-hidden">
+                                <div class="wow fadeInUpBig" data-wow-duration="1.5s">
+                                    <h1 class="fs-120 text-uppercase fs-sm-10vw mb-2 lh-1">Wuse Housing Scheme</h1>
+                                    <h3>Affordable Housing in Wuse Zone 4, Abuja</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sw-overlay op-5"></div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <h2>Affordable Housing Scheme</h2>
+                        <p>Wuse Housing Scheme provides quality 2-3 bedroom homes for low and middle-income families in Wuse Zone 4, Abuja. This strategic location offers easy access to the city center while maintaining affordability.</p>
+                        <p>This project demonstrates our commitment to bridging Nigeria's housing deficit by providing quality, affordable homes for families across income levels.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="p-4 bg-light rounded">
+                            <h4>Project Details</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Location:</strong> Wuse Zone 4, Abuja, FCT</li>
+                                <li><strong>Type:</strong> Affordable Housing</li>
+                                <li><strong>Status:</strong> Completed</li>
+                                <li><strong>Units:</strong> 150</li>
+                                <li><strong>Price Range:</strong> ₦6M - ₦12M</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-color section-dark text-light pt-50 pb-50">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-9">
+                        <h3 class="mb-0 fs-32">Interested in Wuse Housing Scheme?</h3>
+                    </div>
+                    <div class="col-lg-3 text-lg-end">
+                        <a class="btn-main fx-slide btn-line" href="{% url 'contact' %}"><span>Contact Us</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
+
+

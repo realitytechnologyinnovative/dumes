@@ -1,0 +1,774 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <section id="section-hero" class="text-light no-top no-bottom relative overflow-hidden z-1000">
+            <div class="abs w-100 abs-centered z-2">
+                <div class="container">
+                    <div class="spacer-double"></div>
+
+                    <div class="row g-4 align-items-center justify-content-between">
+                        <div class="col-md-5">
+                            <h1 class="mb-0">TRANSFORMING DREAMS INTO REALITY</h1>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <h4 class="fw-400">{{ contact.address }}</h4>
+                            <a class="btn-main btn-line bg-blur fx-slide" href="#section-contact"><span>Contact Us</span></a>&nbsp;
+                            <a class="btn-main btn-line bg-blur fx-slide" href="#section-overview"><span>Our Services</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-center">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-inner" data-bgimage="url({% static 'images/slider/3.jpg' %})">
+                            <div class="sw-overlay op-4"></div>
+                        </div>
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-inner" data-bgimage="url({% static 'images/slider/4.webp' %})">
+                            <div class="sw-overlay op-4"></div>
+                        </div>
+                    </div>
+
+
+                  </div>
+                  
+                </div>
+            </div>
+
+            <div class="abs w-100 bottom-0 z-2 pb-4 sm-hide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h6>Affordable Housing</h6>
+                                </div>
+                                <div>
+                                    <h6>Quality Construction</h6>
+                                </div>
+                                <div>
+                                    <h6>Sustainable Design</h6>
+                                </div>
+                                <div>
+                                    <h6>Community Focus</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-overview">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="ps-lg-3">
+                            <div class="subtitle wow fadeInUp" data-wow-delay=".2s">Company Overview</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Leading Nigerian Housing Development Company</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">{{ company.name }} is a leading Nigerian housing development company dedicated to addressing the critical need for affordable, low-cost housing across the nation. Established in {{ company.established }} and registered with {{ company.registration }}, we specialize in designing, constructing, and delivering high-quality, sustainable housing solutions tailored to the needs of low- and middle-income families. Our corporate headquarters in Nigeria's capital, {{ location.city }}, serves as the base for our mission to transform communities and improve living standards.</p>
+
+                            <a class="btn-main fx-slide" href="{% url 'about' %}"><span>Learn More</span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="h-100 rounded-1">
+                                    <img src="{% static 'images/icons-color/1.png' %}" class="w-70px mb-4 wow scaleIn" alt="">
+                                    <div class="relative wow fadeInUp">
+                                        <h4>Real Estate Development</h4>
+                                        <p class="mb-0">Comprehensive real estate development services from conceptualization to completion, ensuring timely delivery and cost efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="h-100 rounded-1">
+                                    <img src="{% static 'images/icons-color/2.png' %}" class="w-70px mb-4 wow scaleIn" alt="">
+                                    <div class="relative wow fadeInUp">
+                                        <h4>Affordable Housing Solutions</h4>
+                                        <p class="mb-0">Bridging Nigeria's housing deficit by providing low-cost, durable, and aesthetically pleasing homes for low- and middle-income families.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="h-100 rounded-1">
+                                    <img src="{% static 'images/icons-color/3.png' %}" class="w-70px mb-4 wow scaleIn" alt="">
+                                    <div class="relative wow fadeInUp">
+                                        <h4>Sustainable Building Practices</h4>
+                                        <p class="mb-0">Eco-friendly materials and energy-efficient designs that support environmental sustainability and reduce environmental impact.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="h-100 rounded-1">
+                                    <img src="{% static 'images/icons-color/4.png' %}" class="w-70px mb-4 wow scaleIn" alt="">
+                                    <div class="relative wow fadeInUp">
+                                        <h4>Project Financing & Management</h4>
+                                        <p class="mb-0">Comprehensive project management services including feasibility studies, budgeting, and financing solutions in collaboration with financial institutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section-rooms" class="bg-dark section-dark text-light">
+            <div class="container">
+              <div class="row g-4 gx-5 justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Our Services</div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Comprehensive Housing Solutions</h2>
+                </div>
+              </div>
+              <div class="row g-4 gx-5 justify-content-center wow fadeInUp">
+                <div class="col-lg-12">
+                    <div class="de-tab pill">
+                        <ul class="d-tab-nav mb-4">
+                            <li class="active-tab">Real Estate Development</li>
+                            <li>Affordable Housing</li>
+                            <li>Urban Projects</li>
+                            <li>Project Management</li>
+                        </ul>
+                        <ul class="d-tab-content pt-3">
+                            <li>
+                                <div class="row g-4 justify-content-between">
+                                    <div class="col-lg-4">
+                                        <div class="relative bg-dark-2 rounded-1 h-100">
+                                            <h3 class="fs-32 mb-4 p-40">Real Estate Development</h3>
+                                            <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
+                                                <p class="mb-0">From bustling urban centers to underserved rural areas, we develop housing projects that cater to diverse demographics. Our designs are adaptable to local contexts, ensuring relevance and sustainability.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="relative">
+                                            <div class="bg-blur abs p-2 bottom-0 rounded-2 px-4 m-4 text-white">
+                                                <h4 class="mb-0">Full Service</h4>
+                                            </div>
+                                            <img src="{% static 'projects_images/1.jpg' %}" class="w-100 rounded-1" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row g-4 justify-content-between">
+                                    <div class="col-lg-4">
+                                        <div class="relative bg-dark-2 rounded-1 h-100">
+                                            <h3 class="fs-32 mb-4 p-40">Affordable Housing</h3>
+                                            <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
+                                                <p class="mb-0">We are committed to bridging Nigeria's housing deficit by providing low-cost, durable, and aesthetically pleasing homes for low- and middle-income families. Our affordable housing projects prioritize accessibility, functionality, and community integration.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="relative">
+                                            <div class="bg-blur abs p-2 bottom-0 rounded-2 px-4 m-4 text-white">
+                                                <h4 class="mb-0">Quality & Affordability</h4>
+                                            </div>
+                                            <img src="{% static 'projects_images/2.jpeg' %}" class="w-100 rounded-1" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row g-4 justify-content-between">
+                                    <div class="col-lg-4">
+                                        <div class="relative bg-dark-2 rounded-1 h-100">
+                                            <h3 class="fs-32 mb-4 p-40">Urban Projects</h3>
+                                            <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
+                                                <p class="mb-0">Urban residential projects designed to meet the needs of city dwellers, with modern amenities and strategic locations that enhance quality of life and community connectivity.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="relative">
+                                            <div class="bg-blur abs p-2 bottom-0 rounded-2 px-4 m-4 text-white">
+                                                <h4 class="mb-0">Urban Living</h4>
+                                            </div>
+                                            <img src="{% static 'images/slider/3.jpg' %}" class="w-100 rounded-1" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row g-4 justify-content-between">
+                                    <div class="col-lg-4">
+                                        <div class="relative bg-dark-2 rounded-1 h-100">
+                                            <h3 class="fs-32 mb-4 p-40">Project Management</h3>
+                                            <div class="abs p-sm-relative bottom-0 p-40 start-0 w-100">
+                                                <p class="mb-0">Comprehensive project management services including feasibility studies, budgeting, and financing solutions. We collaborate with financial institutions and investors to ensure successful execution of every project.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-8">
+                                        <div class="relative">
+                                            <div class="bg-blur abs p-2 bottom-0 rounded-2 px-4 m-4 text-white">
+                                                <h4 class="mb-0">Expert Management</h4>
+                                            </div>
+                                            <img src="{% static 'projects_images/3.png' %}" class="w-100 rounded-1" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>        
+
+        <section id="section-gallery" class="bg-color-op-1">
+            <div class="container">
+              <div class="row g-4 gx-5 justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Project Gallery</div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Housing Developments</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <ul id="filters" class="wow fadeInUp" data-wow-delay="0s">
+                        <li><a href="#" data-filter="*" class="selected">View All</a></li>
+                          <li><a href="#" data-filter=".exterior">Completed Projects</a></li>
+                          <li><a href="#" data-filter=".interior">In Progress</a></li>
+                          <li><a href="#" data-filter=".facilities">Community Facilities</a><li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div id="gallery" class="row g-3 wow fadeInUp" data-wow-delay=".3s">
+
+                {% for img_num in gallery_images %}
+                <div class="col-md-4 col-sm-6 col-12 item {% if forloop.counter <= 5 %}interior{% elif forloop.counter <= 8 %}exterior{% else %}facilities{% endif %}">
+                    <a href="{% static 'images/gallery/l' %}{{ img_num }}.webp" class="image-popup d-block hover">
+                        <div class="relative overflow-hidden rounded-1">
+                            <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
+                                View
+                            </div>
+                            <div class="absolute start-0 w-100 h-100 overlay-dark-7 hover-op-1 z-2"></div>
+                            <img src="{% static 'images/gallery/l' %}{{ img_num }}.webp" class="w-100 hover-scale-1-2" alt="">
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
+              </div>
+
+
+            </div>
+        </section>
+
+        <section id="section-floorplan" class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-4">
+                        <div class="pe-lg-3">
+                            <div class="subtitle wow fadeInUp" data-wow-delay=".2s">Our Commitment</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Sustainable Development</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">{{ company.name }} is dedicated to aligning its operations with global housing and sustainability objectives, including the United Nations Sustainable Development Goals (SDGs). Our projects directly contribute to SDG 11: Sustainable Cities and Communities by providing affordable housing and improving urban living conditions across Nigeria.</p>
+
+                            <div class="relative overflow-hidden">
+                                <div class="d-flex bg-dark-2 px-4 py-2">
+                                    <div class="w-60">Housing Units Delivered</div>
+                                    <div class="w-40 fw-600">{{ company.statistics.housing_units }}+</div>
+                                </div>
+                                <div class="d-flex px-4 py-2">
+                                    <div class="w-60">Communities Developed</div>
+                                    <div class="w-40 fw-600">{{ company.statistics.communities }}+</div>
+                                </div>
+                                <div class="d-flex bg-dark-2 px-4 py-2">
+                                    <div class="w-60">Years of Experience</div>
+                                    <div class="w-40 fw-600">{{ company.statistics.years_experience }}+</div>
+                                </div>
+                                <div class="d-flex px-4 py-2">
+                                    <div class="w-60">Active Projects</div>
+                                    <div class="w-40 fw-600">{{ company.statistics.active_projects }}+</div>
+                                </div>
+                                <div class="d-flex bg-dark-2 px-4 py-2">
+                                    <div class="w-60">Nigerian States Covered</div>
+                                    <div class="w-40 fw-600">{{ company.statistics.states_covered }}+</div>
+                                </div>
+                                <div class="d-flex px-4 py-2">
+                                    <div class="w-60">SDG Alignment</div>
+                                    <div class="w-40 fw-600">SDG 11 & 13</div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="owl-carousel owl-theme owl-single-dots">
+                            <img src="{% static 'projects_images/2.jpeg' %}" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt="">
+                            <img src="{% static 'projects_images/1.jpg' %}" class="w-100 wow fadeInUp" data-wow-delay=".2s" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer-double"></div>
+
+                <div class="row g-3">
+                  <div class="col-md-3 col-6">
+                        <div class="bg-dark-2 py-4 rounded-1 text-center">
+                            <h4>Housing Units</h4>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="{% static 'images/svg/size.svg' %}" class="w-40px me-3" alt="">
+                                <div class="">{{ company.statistics.housing_units }}+</div>
+                            </div>
+                        </div>
+                  </div>
+
+                    <div class="col-md-3 col-6">
+                          <div class="bg-dark-2 py-4 rounded-1 text-center">
+                              <h4>Communities</h4>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <img src="{% static 'images/svg/bed.svg' %}" class="w-40px me-3" alt="">
+                                  <div class="">{{ company.statistics.communities }}+</div>
+                              </div>
+                          </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                          <div class="bg-dark-2 py-4 rounded-1 text-center">
+                              <h4>Experience</h4>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <img src="{% static 'images/svg/bath.svg' %}" class="w-40px me-3" alt="">
+                                  <div class="">{{ company.statistics.years_experience }}+ Years</div>
+                              </div>
+                          </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                          <div class="bg-dark-2 py-4 rounded-1 text-center">
+                              <h4>Active Projects</h4>
+                              <div class="d-flex justify-content-center align-items-center">
+                                  <img src="{% static 'images/svg/car.svg' %}" class="w-40px me-3" alt="">
+                                  <div class="">{{ company.statistics.active_projects }}+</div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="spacer-double"></div>
+
+                <!-- Partners and Clients Section -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8 text-center">
+                        <div class="subtitle wow fadeInUp" data-wow-delay=".2s">Strategic Alliances</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Trusted Partners & Valued Clients</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Our commitment to sustainable development is strengthened through strategic partnerships with leading organizations, government agencies, and international bodies. Together, we deliver innovative housing solutions that contribute to Nigeria's sustainable development goals.</p>
+                    </div>
+                </div>
+
+                <div class="spacer-40"></div>
+
+                <!-- Partners Logo Carousel -->
+                <div class="partners-carousel-wrapper">
+                    <div class="owl-carousel owl-theme" id="partners-carousel">
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-0.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-1.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-2.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-3.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-4.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-5.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-6.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-7.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-8.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-9.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-10.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-11.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-12.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-13.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-14.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="partner-logo-item">
+                                <img src="{% static 'images/partners/partner-15.png' %}" class="img-fluid" alt="Partner Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section>
+
+            <div class="container relative z-2">
+              <div class="row g-4 gx-5 justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Our Impact</div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Community Development</h2>
+                </div>
+              </div>
+
+              <div class="row g-4">
+                  <div class="col-lg-4 col-md-6">
+                        <div class="overflow-hidden relative rounded-1 text-light text-center wow zoomIn" data-wow-delay=".0s">
+                            <div class="wow scaleIn overflow-hidden">
+                                <img src="{% static 'projects_images/8.jpg' %}" class="w-100" alt="">
+                            </div>
+                            <div class="abs z-2 bottom-0 p-30 w-100 text-center hover-op-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="mb-0">Urban Development</h3>
+                                    <div>Active</div>
+                                </div>
+                            </div>
+                            <div class="gradient-edge-bottom abs w-100 h-40 bottom-0"></div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="overflow-hidden relative rounded-1 text-light text-center wow zoomIn" data-wow-delay=".0s">
+                          <div class="wow scaleIn overflow-hidden">
+                              <img src="{% static 'projects_images/6.jpg' %}" class="w-100" alt="">
+                          </div>
+                          <div class="abs z-2 bottom-0 p-30 w-100 text-center hover-op-0">
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <h3 class="mb-0">Rural Projects</h3>
+                                  <div>Ongoing</div>
+                              </div>
+                          </div>
+                          <div class="gradient-edge-bottom abs w-100 h-40 bottom-0"></div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="overflow-hidden relative rounded-1 text-light text-center wow zoomIn" data-wow-delay=".0s">
+                          <div class="wow scaleIn overflow-hidden">
+                              <img src="{% static 'projects_images/7.jpg' %}" class="w-100" alt="">
+                          </div>
+                          <div class="abs z-2 bottom-0 p-30 w-100 text-center hover-op-0">
+                              <div class="d-flex justify-content-between align-items-center">
+                                  <h3 class="mb-0">Affordable Housing</h3>
+                                  <div>500+ Units</div>
+                              </div>
+                          </div>
+                          <div class="gradient-edge-bottom abs w-100 h-40 bottom-0"></div>
+                      </div>
+                  </div>
+                  
+
+              </div>
+
+            </div>
+        </section>
+
+        <section aria-label="section" class="p-0 section-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a class="d-block hover popup-youtube" href="https://www.youtube.com/watch?v=C6rf51uHWJg">
+                            <div class="relative overflow-hidden">
+                                <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
+                                    <div class="player circle wow scaleIn"><span></span></div>
+                                </div> 
+                                <div class="absolute w-100 h-100 top-0 bg-dark hover-op-05"></div>
+                                <img src="{% static 'images/slider/3.jpg' %}" class="w-100 hover-scale-1-1" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-contact">
+            <div class="container">
+              <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Get In Touch</div>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Contact D-DUMES SHELTER LIMITED</h2>
+                </div>
+              </div>
+
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="{% static 'projects_images/9.webp' %}" class="w-100 rounded-1" alt="">
+
+                        <div class="mt-3">
+                            <h4 class="mb-0">{{ company.name }}</h4>
+                            <div class="fw-500 id-color">{{ contact.phone.primary }}</div>
+                            <div class="fw-500 id-color">{{ contact.phone.secondary }}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <form name="bookingForm" id="booking_form" method="post" action="#">
+                        {% csrf_token %}
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div id="date" class="relative input-group date" data-date-format="mm-dd-yyyy">
+                                    <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-calendar"></i>
+                                    <input class="form-control" name="date" type="text" >
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="relative">
+                                    <select name="time" id="time" class="form-control">
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="20:00">20:00</option>
+                                    </select>
+                                    <i class="absolute top-0 end-0 id-color pt-3 pe-3 icofont-simple-down"></i>
+                                </div>
+                            </div>                                
+
+                            <div class="col-md-12">
+                                <textarea name="message" id="message" class="form-control h-150px" placeholder="Submit Request" required></textarea>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="text-start">
+                                    <div id='submit'>
+                                        <input type='submit' id='send_message' value='Send Message' class="btn-main">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message_col" class='success'>
+                        Your message has been sent successfully. Refresh this page if you want to send more messages.
+                    </div>
+                    <div id="error_message" class='error'>
+                        Sorry there was an error sending your form.
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+    <!-- datepicker begin -->
+    <script>
+        $(function () {
+          $("#date").datepicker({ 
+                autoclose: true, 
+                todayHighlight: true
+          }).datepicker('update', new Date());
+        });
+    </script>
+    <!-- datepicker close -->
+
+    <!-- Partners Carousel Initialization -->
+    <script>
+        (function() {
+            function initPartnersCarousel() {
+                if (typeof jQuery !== 'undefined' && typeof jQuery.fn.owlCarousel !== 'undefined') {
+                    var $carousel = jQuery('#partners-carousel');
+                    if ($carousel.length && !$carousel.hasClass('owl-loaded')) {
+                        $carousel.owlCarousel({
+                            loop: true,
+                            margin: 30,
+                            nav: false,
+                            dots: false,
+                            autoplay: true,
+                            autoplayTimeout: 3000,
+                            autoplaySpeed: 2000,
+                            autoplayHoverPause: true,
+                            rtl: false,
+                            smartSpeed: 1000,
+                            responsive: {
+                                1200: {
+                                    items: 4
+                                },
+                                992: {
+                                    items: 3
+                                },
+                                768: {
+                                    items: 2
+                                },
+                                576: {
+                                    items: 2
+                                },
+                                0: {
+                                    items: 1
+                                }
+                            }
+                        });
+                    }
+                } else {
+                    setTimeout(initPartnersCarousel, 100);
+                }
+            }
+            
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initPartnersCarousel);
+            } else {
+                jQuery(document).ready(initPartnersCarousel);
+            }
+            jQuery(window).on('load', initPartnersCarousel);
+        })();
+    </script>
+
+    <!-- Partners Carousel Styles -->
+    <style>
+        .partners-carousel-wrapper {
+            padding: 40px 0;
+        }
+        
+        .partner-logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            padding: 30px;
+            background: transparent;
+            border-radius: 10px;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .partner-logo-item img {
+            max-height: 120px;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            display: block !important;
+        }
+        
+        .partner-logo-item:hover img {
+            opacity: 1;
+            filter: brightness(0) invert(1);
+        }
+        
+        #partners-carousel {
+            display: block !important;
+            visibility: visible !important;
+        }
+        
+        #partners-carousel .owl-stage-outer {
+            overflow: visible;
+        }
+        
+        #partners-carousel .owl-item {
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #partners-carousel .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .partner-logo-item {
+                height: 120px;
+                padding: 20px;
+            }
+            
+            .partner-logo-item img {
+                max-height: 90px;
+            }
+        }
+    </style>
+{% endblock %}
+

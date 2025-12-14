@@ -1,0 +1,11 @@
+{% load static %}
+<!-- Javascript Files -->
+<script src="{% static 'js/vendors.js' %}"></script>
+<script src="{% static 'js/designesia.js' %}"></script>
+{% if scripts %}
+  {% for script in scripts %}
+  <script src="{% static script %}"></script>
+  {% endfor %}
+{% endif %}
+
+

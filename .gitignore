@@ -1,11 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.virtualenv/
+venv/
+ENV/
+env/
+.venv
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media
+/staticfiles
+/static
+*.pot
+*.pyc
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jekyll (old files - can be removed later)
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-vendor/
-.bundle/
-node_modules/
-*.gem
-*.log
-.DS_Store
+Gemfile.lock
 
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.hypothesis/
+
+# Production
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Project specific
+*.bak
+*.tmp
+.cache/

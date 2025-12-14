@@ -1,0 +1,74 @@
+{% load static %}
+<!-- footer begin -->
+<footer class="section-dark">
+    <div class="container">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center">
+                    <img src="{% static 'images/logo.png' %}" class="w-200px" alt="D-DUMES SHELTER LIMITED">
+                    <div class="spacer-single"></div>
+                    <div class="fs-16">
+                        {{ contact.address }}<br>
+                        {{ contact.registration }}
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+        <div class="spacer-double"></div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+                <div class="d-flex justify-content-center">
+                    <i class="fs-60 id-color icon_phone"></i>
+                    <div class="ms-3">
+                        <h4 class="mb-0">Call Us</h4>
+                        <p>{{ contact.phone.primary }}<br>{{ contact.phone.secondary }}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+                <div class="d-flex justify-content-center">
+                    <i class="fs-60 id-color icon_clock"></i>
+                    <div class="ms-3">
+                        <h4 class="mb-0">Registration</h4>
+                        <p>{{ contact.registration }}<br>Established {{ contact.established }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+                <div class="d-flex justify-content-center">
+                    <i class="fs-60 id-color icon_mail"></i>
+                    <div class="ms-3">
+                        <h4 class="mb-0">Email Us</h4>
+                        <p>{{ contact.email }}</p>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+    </div>
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    Powered by Tj Zango Technologies Nigeria | 08093969093
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-icons mb-sm-30 text-center">
+                        <a href="{{ contact.social.facebook }}"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="{{ contact.social.twitter }}"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="{{ contact.social.instagram }}"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="{{ contact.social.youtube }}"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="{{ contact.social.whatsapp }}"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+
+

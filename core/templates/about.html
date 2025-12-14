@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <section id="section-hero" class="section-dark text-light no-top no-bottom relative overflow-hidden mh-600 jarallax">
+            <img src="{% static 'images/background/5.webp' %}" class="jarallax-img" alt="">
+            <div class="gradient-edge-top op-6"></div>
+            <div class="abs w-80 bottom-10 z-2 w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="relative overflow-hidden">
+                                <div class="wow fadeInUpBig" data-wow-duration="1.5s">
+                                    <h1 class="fs-120 text-uppercase fs-sm-10vw mb-2 lh-1">About Us</h1>
+                                    <h3>Transforming Dreams into Reality</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sw-overlay op-5"></div>
+        </section>
+
+        
+        <section>
+            <div class="container relative z-1">
+                <div class="row g-4 gx-5 align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <div class=" overflow-hidden wow zoomIn">
+                                            <img src="{% static 'images/misc/p1.webp' %}" class="w-100 wow scaleIn" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row g-4">
+                                    <div class="spacer-single sm-hide"></div>
+                                    
+                                    <div class="col-lg-12">
+                                       <div class=" overflow-hidden wow zoomIn" data-wow-delay=".3s">
+                                            <img src="{% static 'images/misc/p2.webp' %}" class="w-100 wow scaleIn" alt="" data-wow-delay=".3s">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="subtitle wow fadeInUp" data-wow-delay=".2s">About Us</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Welcome to {{ company.name }}, {{ company.tagline }}</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">At {{ company.name }}, we believe that home is more than just a place — it's where your story unfolds. Established in {{ company.established }} and registered with {{ company.registration }}, we are a leading Nigerian housing development company dedicated to addressing the critical need for affordable, low-cost housing across the nation. Our headquarters in {{ location.city }}, {{ location.country }}, serves as the base for our mission to transform communities and improve living standards through high-quality, sustainable housing solutions.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bg-dark section-dark text-light relative no-top no-bottom overflow-hidden">
+            <div class="container-fluid position-relative half-fluid">
+
+              <div class="container">
+
+                <div class="row gx-5">
+                  <!-- Image -->
+                  <div class="col-lg-6 position-lg-absolute right-half h-100 overflow-hidden">
+                    <div class="image" data-bgimage="url({% static 'images/slider/4.webp' %}) center"></div>
+                  </div>
+                  <!-- Text -->
+                  <div class="col-lg-6 relative z-3">
+                        <div class="me-lg-5 pe-lg-5 py-5 my-5">
+                            <div class="subtitle">Our Mission</div>
+                            <h3 class="fs-40 lh-1-3">{{ company.mission }}</h3>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        
+
+        <section class="text-center pt60 pb50 relative">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 mb-sm-30">
+                        <div class="de_count relative fs-15 wow fadeInRight" data-wow-delay=".0s">
+                            <h3 class="fs-60 mb-0"><span class="timer" data-to="{{ company.statistics.housing_units }}" data-speed="3000">0</span>+</h3>
+                            <div>Housing Units</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-sm-30">
+                        <div class="de_count relative fs-15 wow fadeInRight" data-wow-delay=".2s">
+                            <h3 class="fs-60 mb-0"><span class="timer" data-to="{{ company.statistics.communities }}" data-speed="3000">0</span>+</h3>
+                            <div>Communities</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-sm-30">
+                        <div class="de_count relative fs-15 wow fadeInRight" data-wow-delay=".4s">
+                            <h3 class="fs-60 mb-0"><span class="timer" data-to="{{ company.statistics.years_experience }}" data-speed="3000">0</span>+</h3>
+                            <div>Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-sm-30">
+                        <div class="de_count relative fs-15 wow fadeInRight" data-wow-delay=".6s">
+                            <h3 class="fs-60 mb-0"><span class="timer" data-to="{{ company.statistics.active_projects }}" data-speed="3000">0</span>+</h3>
+                            <div>Active Projects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6 offset-lg-3 text-center">
+                        <div class="subtitle wow fadeInUp">Vision</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Vision</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">{{ company.vision }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark section-dark text-light">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-12 text-center">
+                        <div class="subtitle s2 mb-3 wow fadeInUp">Core Values</div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">What We Stand For</h2>
+                    </div>
+                </div>
+                <div class="row g-4 mt-2">
+                    {% for value in company.core_values %}
+                    <div class="col-lg-3 col-md-6">
+                        <div class="text-center p-4">
+                            <h4 class="mb-3">{{ value.name }}</h4>
+                            <p>{{ value.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-color section-dark text-light pt-50 pb-50">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-9">
+                        <h3 class="mb-0 fs-32">Ready to transform your housing dreams into reality?</h3>
+                    </div>
+                    <div class="col-lg-3 text-lg-end">
+                        <a class="btn-main fx-slide btn-line" href="{% url 'contact' %}"><span>Contact Us</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
+
+

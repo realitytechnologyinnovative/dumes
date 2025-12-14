@@ -1,0 +1,10 @@
+# Django Framework
+Django==4.2.16
+
+# Production server (optional - uncomment if needed)
+# gunicorn==21.2.0
+# whitenoise==6.6.0
+
+# Development tools (optional - uncomment if needed)
+# django-debug-toolbar==4.2.0
+# ipython==8.18.1
