@@ -7,6 +7,10 @@
     <meta content="{% if page_description %}{{ page_description }}{% else %}{{ site.description }}{% endif %}" name="description">
     <meta content="{% if page_keywords %}{{ page_keywords }}{% else %}affordable housing, Nigeria, Abuja, housing development, D-DUMES{% endif %}" name="keywords">
     <meta content="{{ company.name }}" name="author">
+    
+    <!-- PWA Meta Tags -->
+    {% load pwa %}
+    {% progressive_web_app_meta %}
     <!-- CSS Files -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" id="bootstrap">
     <link href="{% static 'css/plugins.css' %}" rel="stylesheet" type="text/css">

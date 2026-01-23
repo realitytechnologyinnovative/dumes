@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pwa',  # Django PWA
     'core',
     # 'website',  # Ignored - using core app instead
 ]
@@ -96,10 +97,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Static files directories - root directory contains css/, js/, images/, fonts/ subdirectories
-# Django will look for files like 'css/bootstrap.min.css' starting from BASE_DIR
+# Static files directories
 STATICFILES_DIRS = [
-    BASE_DIR,
+    BASE_DIR / 'core' / 'static',
 ]
 
 # Static files finders
@@ -122,3 +122,48 @@ SITE_TAGLINE = "TRANSFORMING DREAMS INTO REALITY"
 SITE_DESCRIPTION = "Leading Nigerian affordable housing development company. RC: 943183"
 SITE_URL = "https://dume.emts.ng"
 
+# PWA Configuration
+PWA_APP_NAME = 'D-DUMES SHELTER LIMITED'
+PWA_APP_DESCRIPTION = "Leading Nigerian affordable housing development company. Transforming Dreams into Reality."
+PWA_APP_THEME_COLOR = '#E78E01'
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_SCOPE = '/'
+PWA_APP_ORIENTATION = 'portrait-primary'
+PWA_APP_START_URL = '/'
+PWA_APP_STATUS_BAR_COLOR = 'default'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/icon.webp',
+        'sizes': '16x16',
+        'type': 'image/webp'
+    },
+    {
+        'src': '/static/images/logo-1.png',
+        'sizes': '192x192',
+        'type': 'image/png'
+    },
+    {
+        'src': '/static/images/logo-1-bg.png',
+        'sizes': '512x512',
+        'type': 'image/png'
+    }
+]
+PWA_APP_DIR = 'ltr'
+PWA_APP_LANG = 'en-US'
+PWA_APP_SHORTCUTS = [
+    {
+        'name': 'Projects',
+        'short_name': 'Projects',
+        'description': 'View our housing projects',
+        'url': '/projects/',
+        'icons': [{'src': '/static/images/logo-1.png', 'sizes': '192x192'}]
+    },
+    {
+        'name': 'Contact',
+        'short_name': 'Contact',
+        'description': 'Get in touch with us',
+        'url': '/contact/',
+        'icons': [{'src': '/static/images/logo-1.png', 'sizes': '192x192'}]
+    }
+]

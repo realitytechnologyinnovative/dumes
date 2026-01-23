@@ -10,6 +10,9 @@
     <meta content="{% if page_description %}{{ page_description }}{% else %}D-DUMES SHELTER LIMITED Housing Project - Affordable Housing Development{% endif %}" name="description">
     <meta content="" name="keywords">
     <meta content="" name="author">
+    <!-- PWA Meta Tags -->
+    {% load pwa %}
+    {% progressive_web_app_meta %}
     <!-- CSS Files
     ================================================== -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" id="bootstrap">
